@@ -3,34 +3,36 @@
  */
 
 package aula03;
+
 import java.util.Scanner;
+
 /**
  *
  * @author otniel
  */
 public class Pessoa {
     int idade;
-    
+
     public static int mediaIdades(Pessoa[] pessoas) {
         int soma = 0;
-        for(Pessoa pessoa : pessoas) {
+        for (Pessoa pessoa : pessoas) {
             soma += pessoa.idade;
         }
         return soma / pessoas.length;
     }
-    
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+
         int qtdPessoas;
         int idade;
         Pessoa[] pessoas;
-        
+
         System.out.print("Informe o número de pessoas: ");
         qtdPessoas = scan.nextInt();
-        
+
         pessoas = new Pessoa[qtdPessoas];
-        
+
         System.out.println("Informe as idades das " + qtdPessoas + " pessoas");
         for (int i = 0; i < qtdPessoas; i++) {
             System.out.print("Idade da pessoa " + (i + 1) + ": ");
@@ -43,7 +45,7 @@ public class Pessoa {
                 i--;
             }
         }
-        
+
         scan.close();
         System.out.println("Media das idades: " + mediaIdades(pessoas));
     }

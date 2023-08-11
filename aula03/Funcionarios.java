@@ -63,6 +63,7 @@ public class Funcionarios {
 
         System.out.printf("Media dos salarios: %.2f\n", mediaSalario(funcionarios));
         System.out.printf("Media dos filhos: %d\n", mediaFilhos(funcionarios));
-        System.out.printf("Porcentagem de pessoas com salarios ate 3000, que possuem filhos: %.2f%%\n", porcentagemSalariosAteTresMil(funcionarios));
+        System.out.printf("Porcentagem de pessoas com salarios ate 3000, que possuem filhos: %.2f%%\n",
+                porcentagemSalariosAteTresMil(funcionarios));
     }
 }
